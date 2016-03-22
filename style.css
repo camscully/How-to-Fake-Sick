@@ -1,6 +1,8 @@
 body {
 	background-color: #aa80ff;
 	}
+
+/*CSS for Navigation Bar*/
 	
 #navigation {
 	padding: 0;
@@ -26,22 +28,9 @@ body {
 	color: #000000; 
 	}
 
-	
-h1 {
-	text-align: center;
-	font-family: Candy Shop;
-	font-size: 3em;
-	color: #000000;
-	}
-
-p {
-	text-align: center;
-	font-family: calibri;
-	font-size: 1.5em;
-	}
-
-#ferris {
-	text-align: left;
+#navigation a:hover {
+	color: #668cff;
+	background-color: #ffffff;
 	}
 
 /*CSS for pictures on the home page */
@@ -57,12 +46,18 @@ IMG.fakingsick2 {
 	width: 400px;
 	}
 
-/*Different CSS for headers, paragraphs etc. */
+/*Google Form CSS*/
 
-#ss-form-container {
+#ss-form {
 	font-family: calibri;
+	text-align: center;
+	}
+	
+#ss-item ss-navigate {
+	text-align: center;
 	}
 
+/*Different CSS for headers, paragraphs etc. */
 h2 {
 	text-align: center;
 	font-family: calibri;
@@ -74,6 +69,27 @@ h3 {
 	font-size: 1.5em;
 	}
 	
+h1 {
+	text-align: center;
+	font-family: Candy Shop;
+	font-size: 3em;
+	color: #000000;
+	}
+
+p {
+	text-align: center;
+	font-family: calibri;
+	font-size: 1.5em;
+	}
+	
+p2 {
+	font-family: calibri;
+	}
+
+#ferris {
+	text-align: left;
+	}
+
 #instructions > ol {
 	width: 600px;
 	margin-left: auto;
@@ -106,13 +122,61 @@ h3 {
     text-align: center;
 }
 
-/*CSS for Navigation Bar*/
-#navigation a:hover {
-	color: #668cff;
-	background-color: #ffffff;
-}
+/* CSS for search box */
 
-/*CSS for Instruction Page */
+<style type="text/css">
+	#tfheader{
+		background-color:#c3dfef;
+	}
+	#tfnewsearch{
+		float:right;
+		padding:20px;
+	}
+	.tftextinput2{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: calibri;
+		font-size:14px;
+		color:#666;
+		border:1px solid #0076a3; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+	.tfbutton2 {
+		margin: 0;
+		padding: 5px 7px;
+		font-family: calibri;
+		font-size:14px;
+		font-weight:bold;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #6b00b3; border-right:0px;
+		background: #0095cd;
+		background: -webkit-gradient(linear, left top, left bottom, from(#7300e6), to(#8c1aff));
+		background: -moz-linear-gradient(top,  #7300e6,  #8c1aff);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	.tfbutton2:hover {
+		text-decoration: none;
+		background: #6b00b3;
+		background: -webkit-gradient(linear, left top, left bottom, from(#7300e6), to(#8c1aff));
+		background: -moz-linear-gradient(top,  #7300e6,  #8c1aff);
+	}
+	
+/* Fixes submit button height problem in Firefox */
+	.tfbutton2::-moz-focus-inner {
+	  border: 0;
+	}
+	.tfclear{
+		clear:both;
+	}
+
+
+
 
 
 
