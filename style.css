@@ -5,7 +5,7 @@ body {
 #navigation {
 	padding: 0;
 	margin: 0;
-	width: 1000px;
+	width: 1100px;
 	margin-left: auto;
 	margin-right: auto;
 	}
@@ -13,23 +13,25 @@ body {
 #navigation li {
 	display: inline;
 	float: left;
-	padding: 0px 0px 0px 25px;
 	}
 	
 #navigation a, #navigation a:visited {
 	display: block;
-	width: 8em;
-	border: 3px outset: #ffffff;
-	font-family: calibri ;
-	font-size: 1em;
+	width: 12em;
+	border: 3px outset #ffffff;
+	font-family: Calibri;
+	font-size: 1.1em;
 	text-align: center;
-	text-decoration: none;
-	color: #d9d9d9;
+	text-decoration:none;
+	color: #000000; 
 	}
+
 	
 h1 {
 	text-align: center;
 	font-family: Candy Shop;
+	font-size: 3em;
+	color: #000000;
 	}
 
 p {
@@ -42,12 +44,20 @@ p {
 	text-align: left;
 	}
 
+/*CSS for pictures on the home page */
+
 IMG.displayed {
 	display: block;
-	width: 400px;
+	width: 300px;
 	margin-left: auto;
 	margin-right: auto;
 	}
+
+IMG.fakingsick2 {
+	width: 400px;
+	}
+
+/*Different CSS for headers, paragraphs etc. */
 
 #ss-form-container {
 	font-family: calibri;
@@ -69,36 +79,41 @@ h3 {
 	margin-left: auto;
 	margin-right: auto;
 	}
-
-/*css for the navigation bar */
 	
-	ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+/*Hover Over Picture Effect*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 
-li {
-    float: left;
+.dropdown-content {
+    display: none;
+    position: absolute;
+      left: 500px;   
+    background-color: #f9f9f9;
+    min-width: 160px;
+    float: right;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-li a {
+.dropdown:hover .dropdown-content {
     display: block;
-    color: white;
+}
+
+.desc {
+    padding: 15px;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
 }
 
-a:hover:not(.active) {
-    background-color: #4540D6;
+/*CSS for Navigation Bar*/
+#navigation a:hover {
+	color: #668cff;
+	background-color: #ffffff;
 }
 
-.active {
-	background-color:#5BDBF5;
-	}
+/*CSS for Instruction Page */
+
 
 
 
